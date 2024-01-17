@@ -1,0 +1,99 @@
+:root{
+    --colorTitle: #374A8F;
+    --colorSubtitle: #2961AB;
+    --colorText: #4B4B4D;
+}
+/* SELECTORES
+
+selector{
+    propiedad1 : valor1;
+    propiedad2 : valor2;
+}
+
+Tipos de Selectores
+1.-Selectores simples (una sola palabra)
+    h1 {}
+2.-Selectores compuestos (dos o mas palabras)
+    h1 span{}
+3.-Selecores con operadores
+    h1 + span{}
+4.-Pseudoclases
+
+Los atributos son case sensitive (sensibles a mayúscula y minúsculas)
+Pero por buenas practicas, siempre se ponen en minúsculas
+*/
+
+/* Selectores simples: etiquetas, tipo o elemento 
+    Sirven para normalizar */
+
+h1{
+    color: red;
+}
+p{
+    color: blue;
+}
+
+/* Selectores simples: selectores de clase
+    Son los que todos usan en css
+    Se indican con un punto y el nombre de la clase
+    * No pueden comenzar con número
+    * Pueden comenzar con "-" o "_"
+    * Pueden tener ":"
+    * Pueden ser de una letra
+*/
+.description{
+    color: green;
+}
+
+.colorTitle{
+    color: var(--colorTitle);
+}
+
+.colorSubtitle{
+    color: var(--colorSubtitle);
+}
+
+.colorText{
+    color:var(--colorText)
+}
+
+.button{
+    display: inline-block;
+    padding: .75em 2em;
+    background: steelblue;
+    color: white;
+    border-radius: .25em;
+}
+/* Selector simple de id 
+    usan el atributo id de html. por lo general se usa para javascript
+    son estilos únicos y no son reutilizables
+    no es una buena práctica y por lo general no se usan para css solo para javascript
+*/
+#title{
+    color: blueviolet;
+    background: pink;
+}
+
+/* Selectores compuestos: agrupados */
+.colorText, .button{
+    color: palevioletred;
+}
+
+/* Selectores compuestos: combinados */
+/* Los selectores combinados no pueden tener espacios
+ */
+p.button{
+    color: white;
+}
+
+/* Selector compuesto: descendiente */
+/* Los selectores desendientes siempre llevan un espacio */
+body div span{
+    color: blue;
+}
+
+/* Selectores con operadores 
+    *: Selector universal 
+    >: hijo directo
+    +: hermano siguiente 
+    ~: hermanos siguientes*/

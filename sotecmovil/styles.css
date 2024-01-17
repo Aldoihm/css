@@ -1,0 +1,20 @@
+:root{
+    --colorTitle: #374A8F;
+    --colorSubtitle: #2961AB;
+    --colorText: #4B4B4D;
+}
+
+.colorTitle{
+    color: var(--colorTitle);
+}
+
+.colorSubtitle{
+    color: var(--colorSubtitle);
+}
+
+.colorText{
+    color: var(--colorText)
+}
+body{
+    color: var(--colorText);
+}

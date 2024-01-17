@@ -1,0 +1,21 @@
+
+/* Variables CSS (Custom properties) */
+:root{
+    --colorTitle: #374A8F;
+    --colorSubtitle: #2961AB;
+    --colorText: #4B4B4D;
+
+}
+/* Estos son los estilos de los títulos */
+h1{
+    color:var(--colorTitle);
+    width: 5000px;
+    margin: 2em;
+}
+
+h2{
+    color:var(--colorSubtitle)
+}
+p{
+    color: var(--colorText);
+}
