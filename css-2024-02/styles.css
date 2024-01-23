@@ -74,26 +74,56 @@ p{
     background: pink;
 }
 
-/* Selectores compuestos: agrupados */
+/* Selectores compuestos: agrupados (Varios selectores) La clave es la coma (,)*/
 .colorText, .button{
     color: palevioletred;
 }
 
 /* Selectores compuestos: combinados */
-/* Los selectores combinados no pueden tener espacios
+/* Los selectores combinados no pueden tener espacios 
+   (AND): es una operación lógica AND porque deben cumplir que: Tenga todos los selectores que escribimos
  */
 p.button{
     color: white;
 }
 
-/* Selector compuesto: descendiente */
+/* Selector compuesto: descendiente (Buscan el elemento)*/
 /* Los selectores desendientes siempre llevan un espacio */
 body div span{
     color: blue;
 }
 
 /* Selectores con operadores 
-    *: Selector universal 
+    *: Selector universal (selecciona todo)
     >: hijo directo
     +: hermano siguiente 
-    ~: hermanos siguientes*/
+    ~: hermanos siguientes
+    
+    Tambien debe ser una operación AND*/
+*{
+    /* Reseteo todo pero no es recomendable */
+    margin: 0;
+    font-family: sans-serif; 
+}
+
+section > h2{
+    margin-left: .5em;
+    margin-top: 1em;
+}
+
+li > span{
+    color: red;
+    font-weight: bold;
+}
+
+h2 + article{
+    margin: 1em;
+    border: 1px solid;
+    display: inline-block;
+    border-radius: 1em;
+    padding-right: 4px;
+}
+
+article > ol{
+    padding-left: 28px;   
+}

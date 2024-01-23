@@ -18,3 +18,8 @@
 body{
     color: var(--colorText);
 }
+
+li{
+    display: inline-block;
+    
+}
