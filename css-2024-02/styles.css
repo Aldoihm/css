@@ -2,6 +2,7 @@
     --colorTitle: #374A8F;
     --colorSubtitle: #2961AB;
     --colorText: #4B4B4D;
+    --colorBorder: #F58634;
 }
 /* SELECTORES
 
@@ -126,4 +127,37 @@ h2 + article{
 
 article > ol{
     padding-left: 28px;   
+}
+
+
+/* Selectores  de atributos.
+Usan []
+[atributo="value"] . El elemento que tenga un tipos de atributo y un valor en específico
+[attr]. El elemento que tenga tal atributo en específico
+
+*/
+
+[type]{
+    display:block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: .5em;
+}
+[type="text"]{
+    border: 2px solid var(--colorSubtitle);
+}
+
+[type="tel"]{
+    border: 2px solid var(--colorBorder);
+}
+
+[required]{
+    border: 2px solid red;
+}
+
+[type="submit"]{
+    background: var(--colorTitle);
+    border: none;
+    color:white;
+    padding: 10px;
 }
