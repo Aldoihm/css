@@ -161,3 +161,23 @@ Usan []
     color:white;
     padding: 10px;
 }
+
+/* SELECTOR DE ATRIBUTOS CON COMODINES
+    1.- Comienza con: [atributo^="valor"]
+    2.- Termina con: [atributo$="valor]
+    3.- Contiene: [atributo*="valor"]
+*/
+
+/* Enlace peligroso */
+a[href^="http://"]{
+    color: red;
+}
+
+/* Enlaces que son imágenes png */
+a[href$=".png"]{
+    color: var(--colorText);
+}
+/* Contiene  */
+a[href*="sotecmovil"]{
+    border: 2px solid var(--colorBorder);
+}
