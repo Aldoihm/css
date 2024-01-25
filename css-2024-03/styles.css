@@ -1,0 +1,56 @@
+/* LOS 3 PILARES DE CSS
+    1.- Especificidad
+    2.- Cascada
+    3.- Herencia
+
+    Resuelve los conflictos
+    Definen las arquitecturas CSS:
+        *SMACSS
+        *OOCSS
+        *ITCSS
+*/
+
+/* ESPECIFICIDAD
+        General
+    --------------
+        ------
+          --
+*/
+
+/* Este es el más especifico de todos */
+body > h1.title#title{  /*112*/
+    color: magenta;
+}
+
+h1{                     /*1*/
+    color: red;
+}
+
+.title{                 /*10*/
+    color: green;
+}
+
+#title{                 /*100*/
+    color:blue
+}
+
+h1.title{               /*11*/
+    color: brown;
+}
+
+h1#title{               /*101*/
+    color: purple;
+}
+
+h1.title#title{         /*111*/
+    color: steelblue;
+}
+
+/* El navegador una una ecuación para saber que vale más 
+Etiquetas :             1
+    clases, atributos:  10
+    id :                1000
+    estilos en linea:   1000 (estilos aplicados en el mismo html
+    Link para saber el nivel de especificidad de css:
+    https://jonassebastianohlsson.com/specificity-graph/
+*/
