@@ -54,3 +54,20 @@ Etiquetas :             1
     Link para saber el nivel de especificidad de css:
     https://jonassebastianohlsson.com/specificity-graph/
 */
+
+/* CASCADA
+    Los estilos que vienen después, sobreescriben a los que estaban antes.
+    Esta parte la omito porque es obvio
+    
+    Solo hay que tomar en cuenta que la especificidad rompe la cascada
+    a menos que use la palabra reservada !important (Es lo más específico de todos)
+    
+    !important le gane inclusive al estilo en linea
+
+    si hay 2 !important se cancelan ambos !important y se sigue con la especificidad o la cascada, depende del caso.
+    Por lo tanto no es recomendable su uso, solo en situaciones muy especificas
+*/
+
+h2{
+    color: cornflowerblue !important;
+}
