@@ -1,0 +1,55 @@
+/* Box Model
+    Layout.
+    Layout: Es la geometria que usa el navegador para:
+    -Donde va cada elemento
+    -Que tamaño tiene
+    -Cuánto se aproxima cada elemento
+
+    Modelos de Layout que existen:
+        -Box model
+        -Position
+        -Flexbox
+        -Css Grid
+    
+    Box Model (modelo de caja)
+    Todos los elementos HTML son rectángulos
+    
+    Dos tipos de cajas (o elementos)
+    1.- Bloque: 
+        *Ocupa todo el espacio horizontal disponible
+        *Crean una línea nueva
+        *Tienen ancho (width) y alto (height)
+    
+    2.- Inline: 
+        *Abarca solo el espacio necesario para su contenido 
+        *No tienen dimensiones, porque se ajusta al contenido
+        *En las imagenes su dimensión dependera del tamaño de la imágen
+
+    Unidades de longitus (medida de tamaño)
+        - Pixeles (px)
+        - em (% del tamañao de fuente o letra actual) osea de ese elemento con respecto a lo alto
+        - rem (% del tamaño de fuente o letra de body) r:es de root (osea la raíz)
+*/
+
+h1{
+    background: yellow;
+    width: 5em;
+}
+p{
+    background: pink;
+    width: 4em;
+}
+h2{
+    background: gray;
+    color: white;
+}
+
+span{
+    background: yellow;
+    /* observar que no obedece el ancho y alto, porque es un elemento de linea y no tiene dimensioens */
+    width: 10000px;
+    height: 10000px;
+}
+img{
+    width: 200px;
+}
