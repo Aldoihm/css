@@ -71,3 +71,34 @@ Etiquetas :             1
 h2{
     color: cornflowerblue !important;
 }
+
+/* HERENCIA
+    Hereda los estilos de sus padres o ancestros
+    Cascada le gana a herencia 
+    No todos los estilos son heredables, como lo relacionado a la caja.
+
+    Conclusión:
+    HERENCIA < CASCADA < ESPECIFICIDAD
+
+    inherit = hereda a la fuerza
+    initial = deja de heredar a la fuerza
+*/
+
+ul{
+    color: salmon;
+}
+
+body{ /* <p> heredan de body */
+    color: blue;
+    text-align: center;
+    font-size: 2em; /* 2em significa 200%*/
+}
+
+/* Heredo a la fuerza de su papá en este caso de <p> */
+a{
+    color: inherit;
+}
+/* Dejó de heredar a la fuerza em este caso de su papa h2 */
+span{
+    font-size: initial;
+}
