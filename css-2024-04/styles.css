@@ -52,4 +52,30 @@ span{
 }
 img{
     width: 200px;
+    border-radius: 10px;
+}
+
+/* Propiedad display
+    block: hace que un elemento se comporte como bloque
+    inline: hace que un elemento de bloque, se comporque como linea
+    inline-block
+    none: no se muestra
+    flex: hay curso de esto
+    grid: hay curso de esto
+
+    El unico apunte que explicare es el inline-block porque los otros son obvios
+    
+    inline-block
+    Se usa como inline, pero le podemos dar ancho y alto como en el block
+    las imagenes son inline-block y tiene un natural width y natural height
+    si las imagenes les das un width, el navegador calcula el alto, automáticamente y viceversa
+
+*/
+
+.h2-inline-block{
+    display: inline-block;
+    color: blue;
+    width: 15em;
+    text-align: center;
+    padding: 10px;
 }
