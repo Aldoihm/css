@@ -53,6 +53,8 @@ span{
 img{
     width: 200px;
     border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Propiedad display
@@ -78,4 +80,63 @@ img{
     width: 15em;
     text-align: center;
     padding: 10px;
+}
+
+/* 
+    MARGIN
+    
+    Define la separación externa que posee un elemento con respecto al resto.
+    margin :
+        -un solo numero = los 4 margenes (5px)
+        -don numeros = primer numero (arrba y abajo), segundo numero (derecha - izquierda) (5px 4px)
+        -tres numeros =  primer numero (arriba), segundo numero (a la derecha e izquierda), tercer numero(abajo) (3px, 7px 5 px)
+        -cuatro numeros = lo mismo que lo de abajo, (sentido a los agujas del reloj) (1px 2px 3px 4 px)    
+
+    margin-top
+    margin-right
+    margin-bottom
+    margin-leflt
+
+    Tip: recordar que ordena en direción a las agujas del reloj
+
+    Se puede manejar con 
+    -px pixeles, 
+    -con porcentaje (%) con respecto al ancho de la etiqueta padre, no se usa por lo general,
+    
+    TRUCOS
+    Para centrar
+    1.- Asignarle un ancho y deber tener un display block
+    2.- margin-left:auto;
+    3.- margin-right: auto;
+
+    Cosas que no debo hacer es centrar asi
+    marin: 0 auto;
+    margin: auto;
+
+    Abreviatura para escribir
+    ml:a;
+    mr:a;
+*/
+
+.box{    
+    background: pink;
+    height: 100px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Colapsado de márgenes verticales 
+    Se refiere a que los vargenes horizontales entre 2 elementos se suman
+    y los margenes verticales, no se suman
+    Esto lo verificamos en el inspector de elementos
+
+    Tambien se colapsan los margenes verticales de padre a hijo
+        para corregir esto, solo es necesario colocar un paddin != 0 y listo, ya que también existen los margin negativos
+*/
+
+.box{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
