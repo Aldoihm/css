@@ -130,13 +130,39 @@ img{
 /* Colapsado de márgenes verticales 
     Se refiere a que los vargenes horizontales entre 2 elementos se suman
     y los margenes verticales, no se suman
+    Por lo general solo colocan un margin-button, ya que nada sirve poner un margin-top porque se colapsan
     Esto lo verificamos en el inspector de elementos
 
     Tambien se colapsan los margenes verticales de padre a hijo
-        para corregir esto, solo es necesario colocar un paddin != 0 y listo, ya que también existen los margin negativos
+        para corregir esto, solo es necesario colocar un paddin != 0 
+        al padre y listo, ya que también existen los margin negativos
 */
 
 .box{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.boxpadre{
+    background: red;
+    width: 300px;
+    height: 150px;
+    padding: 0.1px; /*Solucion para que el margin padre e hijo no se colapsen*/
+}
+
+.boxhijo{
+    background: blue;
+    margin:20px;
+    width: 150px;
+    height: 75px;
+    color: #FFF;
+    padding: 5%;
+}
+
+/* PADDING 
+    Es la separación entre la orilla de la caja y su contenido
+    es lo mismo que el margin.
+    tambien se puede manejar por porcernta %, pero este se calcula
+    con respecto a la anchura del mismo elemento
+*/
+
