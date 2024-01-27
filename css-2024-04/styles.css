@@ -148,6 +148,7 @@ img{
     width: 300px;
     height: 150px;
     padding: 0.1px; /*Solucion para que el margin padre e hijo no se colapsen*/
+    border: 2px solid black;
 }
 
 .boxhijo{
@@ -156,13 +157,49 @@ img{
     width: 150px;
     height: 75px;
     color: #FFF;
-    padding: 5%;
+    padding: 3%;
 }
 
 /* PADDING 
     Es la separación entre la orilla de la caja y su contenido
     es lo mismo que el margin.
     tambien se puede manejar por porcernta %, pero este se calcula
-    con respecto a la anchura del mismo elemento
+    con respecto a la anchura del elemento del padre
+    NOTA IMPORTANTE:
+        Note que se modifica el tamaño de la caja cuando metia el padding, pero
+        en el tema de box-sizing aclaran el tema. 
 */
 
+/* BORDER 
+    El borde se suma al tamaño de la caja,
+    border: ancho tipo_borde color;
+    tipos de borde: dashed, solid
+*/
+
+/*  BOX-SIZING
+    Como calcula el navegador el tamaño de la caja final
+    Le dices de manera manual de donde sacara el tamaño de la caja
+
+    El Box Model contiene 3 cajas
+    1.- Content Box (es donde escribimos) 
+                De manera predeterminada aplica el width y el height en
+                el content box y ensima suma el padding y el border 
+    2.- Padding Box
+    3.- Border Box
+
+    Para que respete las medidas de width y height, respete las medidas que quiero
+    tengo que decirle que se lo aplique al border box, y no al content box
+    Ejemplo
+*/
+
+.boxhijo{
+    box-sizing: border-box;
+    /* Soluciono el problema del padding */
+}
+
+/* Super importante 
+    podemos hacer esto con el selector universal
+    *{
+        box-sizing: border-box;
+    }
+*/
