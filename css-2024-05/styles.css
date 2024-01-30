@@ -1,0 +1,59 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+.box{
+    width: 400px;
+    height: 250px;
+    background: yellow;
+    border: 1px solid black;
+     /*shorthand  
+        border-width
+        border-style
+        border-color
+     */
+     /* border-width: 2px 2px 4px 8px;
+     border-style: solid dashed dotted double;
+     border-color: black blue red brown; */
+    /* Si no pongo el border-color, toma el color de la letra */
+
+    /* El border forma parte de la caja */
+    
+    /* Propiedades sin shorthand */
+    border-top-width: 20px;
+    border-top-style: dashed;
+    border-top-color:black;
+    /* todo esto se abrebia con: */
+    border-top: 20px dashed black;
+    border-right: 10px solid red;
+    border-bottom: 15px double blue;
+    border-left: 12px dotted purple;
+
+}
+
+h1{
+    border: .25px solid;
+    display: inline-block;
+    padding: 5px;
+}
+
+.caja{
+    display: inline-block;
+    border-width: 50px;
+    border-style: dashed;
+    border-color: black red;
+}
+.triangulo{
+    display: inline-block;
+    border:35px solid;
+    border-color: transparent;
+    border-left-color: red;
+}
+
+/* Border-radius */
+.circle{
+    border:35px solid;
+    display: inline-block;
+    border-radius: 100%;
+    border-left-color: transparent;
+}
