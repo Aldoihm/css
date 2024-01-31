@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --width : 400px;
+    --height: 250px;
+    --bg: yellow;
+}
+
 .box{
     width: 400px;
     height: 250px;
@@ -50,10 +56,46 @@ h1{
     border-left-color: red;
 }
 
-/* Border-radius */
+/* Border-radius 
+    Es un cuarto de circulo
+    50% es lo máximo
+    No es lo mismo el porcentaje que los pixeles
+*/
 .circle{
     border:35px solid;
     display: inline-block;
     border-radius: 100%;
     border-left-color: transparent;
+}
+
+.caja2{
+    width: var(--width);
+    height: var(--height);
+    background: red;
+    /* 
+    border-top-left-radius: 40px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 120px;
+    border-bottom-left-radius: 160px; */
+
+    /* Border-radius: x y */
+    border-top-left-radius: 100px 200px;
+    border-top-right-radius: 100px 50px;
+    border-bottom-right-radius: 100px 200px;
+    border-bottom-left-radius: 100px 50px;
+
+    /*Border-radius: x x x x / y y y y*/
+    border-radius: 50px 100px / 120px 120px;
+    border-radius: 70px / 100px;
+    padding: .1px;
+}
+
+.caja3{
+    width:150px;
+    height: 150px;
+    margin: 50px auto 50px 170px;
+    border: 75px solid;
+    border-color: transparent;
+    border-left-color: white;
+    transform: scaleY(.65);
 }
