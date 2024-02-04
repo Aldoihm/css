@@ -1,5 +1,5 @@
 *, *:before, *:after{
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 :root{
@@ -118,4 +118,34 @@ h1{
     background: var(--bg);
     border: 10px solid;
     outline: 10px solid red;
+}
+
+/* Propiedad box-shadow 
+    box-shadow: h-offset v-offset blur spread color | inset;
+    h-offset: desplazamiento horizontal
+    v-offset: desplazamiento vertical
+    blur: difuminado
+    spread: expansión
+    color
+    inset (opcional): coloca la sobre en el interior del elemento (voltea las cosas)
+*/
+
+.box3{
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    background: black;
+    box-shadow: 300px 0 10px -10px gray, 
+                600px 10px 10px goldenrod ;
+}
+
+.circle2{
+    width: 200px;
+    height: 200px;
+    background: rgb(71, 71, 163);
+    margin: 100px auto;
+    border-radius: 50%;
+    box-shadow: -10px -10px 20px 0 rgba(0, 0, 0, .5) inset,
+                5px 5px 10px 0 rgba(255, 255, 255, .5) inset,
+                5px 5px 10px 0 rgba(255, 255, 255, .2);
 }
