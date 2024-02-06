@@ -1,0 +1,50 @@
+/* Pseudoclases (Selectores de estado)
+    se indican con 2 puntos (tiene que estar pegado para que no se interprete de otra manera)
+    al menos que lo queramos
+    
+    
+    :root = este es elemento html (con especificidad = 10)
+    (se ponen las variables en el root para que esté disponible en todo el documento)
+    ya que si se ponen afuerta del root, solo las variables quedaría disponibles para los hijos
+    
+    :hover = cuando el mouse está encima del elemento
+    :active = se activa cuando hago click y mantengo el click, cuando lo suelta, el cambio desaparece
+    :visited = nos indica que un enlace ya ha sido visitado
+    */
+:root{
+    --color: pink;
+
+}
+
+h1:hover{
+    background: var(--color);
+}
+
+.box{
+    background: yellowgreen;
+    width: 400px;
+    height: 250px;
+    transition: all .3s;
+}
+
+.box p{
+    display: none;
+}
+
+.box:hover p{
+    display: block;
+}
+.box:hover{
+    background: pink;
+    width: 300px;
+    height: 150px;
+}
+
+p:active{
+    color: red;
+}
+
+a:visited{
+    color: rgb(0, 139, 9);
+}
+
