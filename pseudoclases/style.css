@@ -44,7 +44,31 @@ p:active{
     color: red;
 }
 
-a:visited{
+div p a:visited{
     color: rgb(0, 139, 9);
 }
 
+/*  
+    :target = es el target del a, fijarse que cambia la url y en ese momento es cuando se activa
+    :not = niega una condicion
+    :empty = detecta si un elemento esta vacio
+*/
+
+.secreto{
+    display: none;
+}
+
+.secreto:target{
+    display: block;
+}
+
+p:not(.p2){
+    color: red;
+}
+
+.not{
+    box-sizing: border-box;
+    background: yellowgreen;
+    padding: 1em;
+    width: 300px;
+}
