@@ -13,7 +13,11 @@
     */
 :root{
     --color: pink;
-
+    --sotec-blue: #2961AB ;
+    --sotec-blue-light: #00AFEF;
+    --sotec-blue-dark: #374A8F;
+    --sotec-purple: #3E4095;
+    --sotec-dark: #4B4B4D;
 }
 
 h1:hover{
@@ -71,4 +75,20 @@ p:not(.p2){
     background: yellowgreen;
     padding: 1em;
     width: 300px;
+    margin-bottom: 1rem;
+}
+
+.button{
+    background-color: var(--sotec-blue);
+    padding: 0.7rem 0.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small
+}
+
+.button:hover{
+    background-color: var(--sotec-purple);
 }

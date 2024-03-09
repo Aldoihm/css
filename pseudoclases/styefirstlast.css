@@ -1,0 +1,64 @@
+:root{
+    --color: pink;
+    --sotec-blue: #2961AB ;
+    --sotec-blue-light: #00AFEF;
+    --sotec-blue-dark: #374A8F;
+    --sotec-purple: #3E4095;
+    --sotec-dark: #4B4B4D;
+}
+
+.button{
+    background-color: var(--sotec-blue);
+    padding: 0.7rem 0.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small
+}
+
+.button:hover{
+    background-color: var(--sotec-purple);
+}
+
+/* First child y Last child
+    Selección el primer y último hijo
+    div :first-child, el primer hijo de div
+    h2:first-child, que sea el primer hijo "Y" sea el primer hijo
+        si no es le primer hijo, no lo selecciona
+*/
+
+h2:first-child{
+    background-color: yellowgreen;
+}
+
+/* fijarse que aqui NO CUMPLE LA CONDICIÓN */
+h2:last-child{
+    background-color: red;
+}
+
+/* First-of-type y Last-of-type 
+    el primero de su tipo y el último de su tipo
+    se refiere a la etiqueta que esté dentro de un grupo
+*/
+
+p:first-of-type{
+    background-color: var(--sotec-purple);
+    color: white;
+}
+
+p:last-of-type{
+    background-color: var(--sotec-blue);
+    color: white;
+}
+
+/* ÚLTIMA NOTE IMPORTANTE
+    first-child y last-child, funcionan con clases y etiquetas
+    fist-of-type y last-of-type, funciona solo con las etiquetas
+*/
+
+.h:last-of-type{
+    background-color: red;
+    color: white;
+}
