@@ -55,10 +55,10 @@ p:last-of-type{
 
 /* ÚLTIMA NOTE IMPORTANTE
     first-child y last-child, funcionan con clases y etiquetas
-    fist-of-type y last-of-type, funciona solo con las etiquetas
+    fist-of-type y last-of-type, funcionan con clases y etiquetas
 */
 
-.h:last-of-type{
+.p:last-of-type{
     background-color: red;
     color: white;
 }
