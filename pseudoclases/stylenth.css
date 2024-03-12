@@ -21,3 +21,98 @@
 .button:hover{
     background-color: var(--sotec-purple);
 }
+
+/* 
+    :nth-child
+    donde:
+    nth = significa una posición
+    nth-child = posicion del hijo
+    nth-last-child = posición del hijo empezando por el último
+    
+    Se puede encontrar un elemento dándole su posición o 
+    dando una ecuación matemática.
+    
+    :nth-child(even) pares
+    :nth-child(odd) impares
+    :nth-child(Xn) donde x=num. entero n=numero consecutivo empezando de 0
+    :nth-child(Xn+Y) donde y= otro num entero.
+
+*/
+
+.box{
+    border: solid black 1px;
+    border-radius: 0.3em;
+    display: flexbox;
+    width: fit-content;
+    padding: .2em 0.3em;
+}
+
+.p:nth-child(even){
+    background-color: yellowgreen;
+    
+}
+
+.p:nth-child(odd){
+    background-color: rgb(78, 98, 207);
+    color: white;
+}
+
+.x:nth-child(4){
+    background-color: yellowgreen;
+}
+.x:nth-last-child(4){
+    background-color: rgb(78, 98, 207);
+    color: white;
+}
+
+.xn:nth-child(2n){
+    background-color: yellowgreen;
+}
+
+.xn:nth-last-child(3n){
+    background-color: rgb(78, 98, 207);
+    color: white;   
+}
+
+.xny:nth-of-type(3n+1){
+    background-color: rgb(78, 98, 207);
+    color: white;   
+}
+
+/* Trucos CSS 
+    Encontrar los primeros X elementos
+    :nth-child(-n+5){
+        background: yellow;
+    }
+
+    Encontrar los últimos X elementos
+    :nth-last-child(-n+5){
+        background: yellow;
+    }
+    
+    Seleccionar los elementos a partir del número 5
+    :nth-child(n+5){}
+
+    seleccionar todos los elementos pares a partir del 5to elemeto
+    :nth-child(n+5):nth-child(even){}
+
+    Seleccionar los que sean impares y multiplos de 3
+    :nth-child(odd):nth-child(3n){}
+
+    nth-child = respera la posición de la fila
+    nth-of-type = respeta la posición del elemento
+
+*/
+
+.box2{
+    border: solid black 1px;
+    border-radius: 0.3em;
+    display: flexbox;
+    width: fit-content;
+    padding: .2em 0.3em;
+    margin: 1em 0;
+}
+
+h5:nth-of-type(3){
+    background-color: pink;
+}
