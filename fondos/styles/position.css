@@ -1,0 +1,41 @@
+@import url('style.css');
+
+html, body{
+    height: 100%;
+}
+
+h1{
+    color: white;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1707613850087-72aa25a8d462?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-color: var(--sotec-blue-light);
+}
+/* background position */
+/* 
+    background-position: x y
+    
+
+    predeterminado
+    background-position: 0 0;
+    Se puede tomar medidas con
+    px
+    %
+    para x se pueden las propiedades:
+        -left
+        -center
+        -right
+    para y se pueden las propiedades:
+        -top
+        -center 
+        -bottom
+
+    background-position: x (separacion px) y (separacion px)
+
+*/
+
+body{
+    background-size: 300px;
+    background-position: right 50px bottom  20px;
+}
