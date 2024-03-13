@@ -1,0 +1,26 @@
+@import url('style.css');
+
+/* background-size es darle un tamaño (solo aplica a imágenes)*/
+
+/* Valor predeterminado --> background-siza:auto;
+    2 valores:  ancho-alto
+    1 valor: ancho - (alto en automático)
+    
+    opciones:
+    auto: default
+    contain: el fondo se estira hasta acompletar el elemento en la cordenada y
+    cover: el fondo se estira hasta acompletar el elemento en la cordenada x
+    Tanto el contain y el cover se redimensionan en automático según el eje que tienen que rellenar
+*/
+
+
+h1{
+    color: white;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1707613850087-72aa25a8d462?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+}
+body{
+    background-size: cover;
+}
