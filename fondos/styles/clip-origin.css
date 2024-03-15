@@ -1,0 +1,32 @@
+@import url('style.css');
+
+/* background-clip
+    clip:
+    -padding-box
+    -content-box
+    -border-box (Valor predeterminado)
+    Es raro que se use
+*/
+
+.box{
+    width: 500px;
+    height: 600px;
+    background-image: url('https://images.unsplash.com/photo-1707613850087-72aa25a8d462?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    margin: 5px 100px auto;
+    border: 10px solid;
+    border-color: var(--sotec-blue-dark) var(--sotec-blue);
+    color: white;
+    padding:30px;
+    background-clip: content-box ;
+    box-shadow: 0px 10px 30px 0px #292929;
+}
+
+/* background origin
+    Admite los mismo valores: padding-box, border-box y context-box
+    Lo que cambia es que te dice, desde donde comienza el dibujo
+*/
+
+.box{
+    background-origin: border-box;
+}
