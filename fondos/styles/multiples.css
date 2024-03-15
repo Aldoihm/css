@@ -1,0 +1,19 @@
+@import url('style.css');
+
+/* 
+    Multiples background de imágenes
+    la imagen que importe primer, es la que aparece por encima,
+    las demás imágenes aparecen por detrás.
+*/
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    
+    background-image: url(../images/logo-sotec.png),url(../images/logo-sotec.png),url(../images/logo-sotec.png);
+    background-size: 3%,20%,30%;
+    background-repeat: no-repeat;
+    background-position: 0 0, center center, right bottom;
+}
