@@ -1,0 +1,32 @@
+@import url('style.css');
+
+/* Attechment, 
+nos dice si el background hará scroll junto con el contenido 
+    dice que es como si el background ignorará el scroll
+*/
+
+.box{
+    width: 600px;
+    height: 400px;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/228448/stranger-things.jpg');
+    margin: 100px auto;
+    background-origin: border-box;
+    background-attachment: fixed;
+    background-size: 1000px;
+}
+
+body{
+    background-image: url('https://images.unsplash.com/photo-1707613850087-72aa25a8d462?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    margin: 100px auto;
+    background-attachment: fixed;
+    background-size: 1000px;
+}
+
+h1{
+    padding-left: 1rem;
+    color: white;
+}
+
+.button{
+    margin-left: 1rem;
+}
