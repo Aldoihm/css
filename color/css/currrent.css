@@ -1,0 +1,30 @@
+@import './base.css';
+
+/*  
+    frente(color) y fondo (background-color)
+            
+            current-color
+
+    siempre va a tomar el valor de color,
+    que tenga su padre inmediato
+
+            color keywords
+    blue
+    silver
+    black
+    white
+    purple
+    rebeccapurple
+    etc
+
+*/
+
+body{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+h1{
+    border: 1px solid;
+    box-shadow: 5px 5px 5px;
+}
