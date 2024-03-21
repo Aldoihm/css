@@ -1,0 +1,27 @@
+@import './style.css';
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+/* 
+    shorthand background
+
+    background: image position / size repeat attachment origin clip;
+
+    Se hace exactamente como el ejercicio pasado per con shorhand
+*/
+
+body{
+    /* 
+     1ra forma
+    background: url(../images/logo-horizontal.png) 0 0 / 3% no-repeat, url(../images/logo-horizontal.png) center center / 20% no-repeat, url(../images/logo-horizontal.png) right bottom / 30% no-repeat; 
+    */
+
+    /* 2da forma */
+    background:url(../images/logo-horizontal.png) 0 0 / 3% , url(../images/logo-horizontal.png) center center / 20% , url(../images/logo-horizontal.png) right bottom / 30%;
+
+    background-repeat: no-repeat;
+}
