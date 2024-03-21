@@ -1,0 +1,60 @@
+@import './base.css';
+
+/* 
+    2 modos de color básico: Aditivo y Sustractivo
+    Aditivo: suma el color blando
+        - RGB(red, green, blue)
+        su background es una pantalla negra
+    Sustractivo: suma el color negro
+        - CMYK(cyan, magenta, yellow, black)
+        su bakground es una hoja blanca
+
+    RGB tiene 8 bits de color,
+        cada canal tiene 256 posibles variaciones (0~255)
+        R(0~255) G(0~255) B(0~255)
+    
+    Sintaxis css: rgb(0~255,0~255,0~255)
+*/
+
+body{
+    background-color: rgb(255,0,0);
+    background-color: rgb(0,255,0);
+    background-color: rgb(0,0,255);
+    background-color: rgb(0,255,255); /* Cyan */
+    background-color: rgb(255,0,255); /* Magenta */
+    background-color: rgb(255,255,0); /* Yellow */
+    background-color: rgb(0,0,0); /* Black */
+    background-color: rgb(255, 255, 255);
+
+}
+
+/* Trucos:
+    - Cuando los tres canales son iguales, el color siempre es gris
+*/
+body{
+    background-color: rgb(50, 50, 50);
+    background-color: rgb(100, 100, 100);
+    background-color: rgb(128, 128, 128); /*Gris intermedio*/
+    background-color: rgb(150, 150, 150);
+    background-color: rgb(200, 200, 200);
+}
+
+/* También se puede jugar con el gris intermedio */
+
+body{
+    background-color: rgb(200,128,128);
+    background-color: rgb(128,200,128);
+    background-color: rgb(128,128,200);
+    background-color: rgb(128,128,0);
+    background-color: rgb(128,128,255);
+}
+
+/* modo RGBA la A es transparencia y va del 0 al 1
+    1 = color natural
+    0 = transperencia máxima
+    Se me ocurre que o puedo usar en letras en un texbox hidden
+*/
+
+body{
+    color: rgba(150,250,250, 0.7);
+}
