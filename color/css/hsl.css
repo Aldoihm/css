@@ -1,0 +1,69 @@
+@import './base.css';
+
+.imagenes{
+    display: flex;
+}
+.circulo{
+    width: 200px;
+    height: 1000px;
+    background-image: url('./../images/circulo-cromatico.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1rem 1rem;
+}
+.circulo2{
+    width: 200px;
+    height: 1000px;
+    background-image: url('./../images/saturacion.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1rem 1rem;
+}
+/*  
+    Dice que es mejor HSL, que hexadecimal y rgb
+
+    Hue         tono, de 0 a 360 grados
+    Saturation  intensidad de color, de 0(gris) a 100%(color puro)
+    Light       luz, de 0 (negro) a 100% (blanco)
+
+    -----------Tono------------
+    Esto es el circulo cromático de color
+
+    360/3 = 120
+
+    0/360°= red
+    120° = green
+    240° = blue
+
+    60° = yellow
+    180°= cyan
+    300° = magenta
+
+    Resumen:
+    0   rojo
+    60  amarillo
+    120 verde
+    180 cyan
+    240 azul
+    300 magenta
+    360 rojo
+
+    ---------- Saturación -----------
+    0 = se pone gris
+    100 = es el color puro
+    ----------- luz ------------
+    0 = negro 
+    50 = color puro
+    100 = blanco
+*/
+
+body{
+    background-color: hsl(240, 50%, 50%);
+}
+
+/* con transparencia hsla (0 al 1) */
+
+
+body{
+    background-color: hsl(240, 90%, 50%,.7);
+}
