@@ -1,0 +1,55 @@
+@import './base.css';
+
+/* Degradados Lineales */
+
+/* 
+    Sintaxis Básica
+
+bg-image:linear-gradient(color1, color2, etc)
+
+    Sintaxis NO básica
+
+bg-image:linear-gradient(color1 [stop], color2 [stop], etc)
+    
+    stop es opcional.
+    
+    1er Stop: dice hasta que porcentaje tenemos el color puro
+    2do Stop: dice hasta que porcentaje se degradará el color
+
+    Prácticamente trabaja de par en par
+
+    antes de que sea degradado
+    
+    Puede ser en pixel o en porcentaje
+
+    Sintaxis Sper Difícil
+bg-image:linear-gradient([angle],color1 [stop], color2 [stop], etc)
+
+    Angle o Ángulo, es opcional
+    Grados en css es DEG
+
+    palabras reservadas para angel:
+
+    to right
+    to left
+    to top
+    to bottom
+    to top right
+    to bottom right
+    to top left
+    to bottom left
+*/
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient(yellow, red);
+    background-image: linear-gradient(yellow 50%, red 50%);
+    background-image: linear-gradient(yellow 35%, green 35%, green 70%, blue 70%);
+    background-image: linear-gradient(225deg,yellow, red);
+    background-image: linear-gradient(to bottom left,yellow, red);
+    background-repeat: no-repeat;
+    background-size: auto 4rem;
+}
