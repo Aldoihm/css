@@ -74,13 +74,32 @@ radial-gradient([size shape] [at x y], color1 [stop], .. , etc)
     farthest-corner (esquna más lejana)
 */
 .radiales{
-    height: 500px;
-    width: 500px;
+    height: 250px;
+    width: 250px;
     background-image: radial-gradient(yellow,red);
     background-image: radial-gradient(yellow 40%,red 80%);
     background-image: radial-gradient(at 0 100%,yellow 40%,red 80%);
     background-image: radial-gradient(circle at 50% 50%,yellow 40%,red 80%);
     background-image: radial-gradient(200px 300px at 50% 50%,yellow 40%,red 80%);
     background-image: radial-gradient(farthest-corner at 0 0,yellow ,red );
-    
+}
+
+/* Degradados repetidos */
+
+/* Repetir degradados radiales
+    repeating-radial-gradient
+   Repetir degradados lineales
+    repeating-linear-gradient
+
+    nota: también se puede con background-size, lo dejé comentado para hacer pruebas
+*/
+
+.repetidos{
+    height: 300px;
+    width: 300px;
+    background-image: radial-gradient(yellow,red);
+    /* background-size: 20%; */
+    background-image: repeating-radial-gradient(white 10%,blue 20%);
+    background-image: repeating-radial-gradient(white 0,white 10%, blue 10%,blue 20%);
+    background-image: repeating-linear-gradient(white 0,white 8%, blue 8%,blue 8.5%);
 }
