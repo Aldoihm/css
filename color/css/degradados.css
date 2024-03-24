@@ -44,12 +44,43 @@ html, body{
     height: 100%;
 }
 
-body{
+.lineales{
+    height: 200px;
     background-image: linear-gradient(yellow, red);
     background-image: linear-gradient(yellow 50%, red 50%);
     background-image: linear-gradient(yellow 35%, green 35%, green 70%, blue 70%);
     background-image: linear-gradient(225deg,yellow, red);
     background-image: linear-gradient(to bottom left,yellow, red);
     background-repeat: no-repeat;
-    background-size: auto 4rem;
+}
+
+/* Degradados Radiales*/
+
+/* 
+radial-gradient(color1, color2, color3, etc)
+radial-gradient(color1 [stop], color2 [stop], etc)
+radial-gradient([at x y], color1 [stop], color2 [stop], etc)
+    at x y = son las coordenadas del centro
+radial-gradient([size shape] [at x y], color1 [stop], .. , etc)
+    size = tamaño
+    shape = forma (circle or ellipse) (por default la forma será la forma del elemento)
+
+    nota, si doy los tamños no es necesario poner la forma, ya que lo intuye segun las medidas que doy
+
+    Palabras claves para dar tamaño:
+    closest-side (lado más cercano)
+    farthest-side (lado más lejano)
+    closest-corner (esquina más cercana)
+    farthest-corner (esquna más lejana)
+*/
+.radiales{
+    height: 500px;
+    width: 500px;
+    background-image: radial-gradient(yellow,red);
+    background-image: radial-gradient(yellow 40%,red 80%);
+    background-image: radial-gradient(at 0 100%,yellow 40%,red 80%);
+    background-image: radial-gradient(circle at 50% 50%,yellow 40%,red 80%);
+    background-image: radial-gradient(200px 300px at 50% 50%,yellow 40%,red 80%);
+    background-image: radial-gradient(farthest-corner at 0 0,yellow ,red );
+    
 }
