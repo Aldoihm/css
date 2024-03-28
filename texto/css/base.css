@@ -1,3 +1,28 @@
+/* 
+    Diseñar y saber usar css son cosas distintas
+    Recomienda diseño UI
+
+    Tipografía: Disciplina que estudia el diseño y uso
+                del tipo de letras.
+    
+    Fuente: un tipo específico de letra.
+        Consta de:
+        Glifos: Dibujo que representa cada caracter de la fuente.
+        Estilos: Variaciones de la misma fuente (grosor, inclinación)
+    
+    Familia tipográfica: Son variaciones de una fuente principal
+    Hay fuentes pensadas en el título y otra para contenido
+
+    Fuentes más comúnes: 
+    Serif (Terminan con un adorno al final (serifa))
+            Serif, es bueno para lecturas
+    Sans Serif (No terminan con ningún diseño al final)
+            Es moderna la fuente (palo seco)
+    Roboto (Fuente oficial de Android)
+
+    No todas las letras tienen el estilo italico.
+
+*/
 :root{
     --sotec-blue: #2961AB;
     --sotec-blue-light: #00AFEF;
