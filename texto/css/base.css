@@ -35,7 +35,7 @@
     background-image: linear-gradient(to right, var(--sotec-blue), var(--sotec-blue-dark));
     display: flex;
     width: fit-content;
-    padding: 0.7rem 0.5rem;
+    padding: 0.7em 0.5em;
     margin: 1em 0.5em 1em 0;
     color: white;
     text-decoration: none;
