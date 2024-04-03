@@ -1,0 +1,47 @@
+@import './base.css';
+
+p{
+    border: 1px solid #000;
+    background-color: #eee;
+    padding: .5em 1em;
+}
+
+p{
+    font-size: 2rem;
+    font-style:normal;
+    font-weight: 300; /*tiene keyboards (ej. bold), pero no se recomienda*/
+    text-align:center;
+    /* Alineación predeterminada: left 
+        -right
+        -center
+        -justify (no se recomienda, porque quedan huecos)
+        Tips, si mi título está alineado al centro, entonces mi párrafo igual puede estar
+        alineado al centro, si no, no hacerlo.
+    */
+    line-height: 1.5; /*El 1.5 es igaul al 1.5em*/
+    /*La altura de línea nos ayuda a que sea legible, esto si se recomienda usar
+        Se recomienda usar de 1.5 hacia arriba para textos largos
+        En titulos se recomienda usar menores de 1.5 como 1.3
+    */
+    text-decoration:none;
+    /* Es para dar subrayado
+        underline - los que usan los links
+        line-throught  - para dar descuentos
+    */
+    text-transform: lowercase;
+    /* Para transformar el texto como en excel
+        uppercase: transforma a mayúsculas
+        lowercase: transforma en minúscula
+        capitalize: que cada primera letra de cada palabra, sea mayúscula
+    */
+    letter-spacing:.1em;
+    /* Separación entre las letras, puede funcionar para links*/
+    word-spacing: 0;
+    /* Separación entre palabras, puede funcionar en títulos */
+}
+
+/* Recomienda el curso de diseño IU */
+
+h1{
+    text-align: center;
+}
