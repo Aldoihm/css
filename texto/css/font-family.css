@@ -1,0 +1,50 @@
+@import './base.css';
+
+
+/* Font family 
+    Solo funciona con las fuentes que tenga instaladas
+    Con fuentes con nombres más de una palabra, se recomienda, ponerlo entre comillas
+    Ej: 'Open Sans'
+    Algo importante, es que tiene que estar la fuente instalada en el sistema operativo
+    porque si no, no se vé.
+    @font-face: Se usa para poder crear mis propias fuentes
+    Usar google fonts
+
+    Para google fonts, buscar la palabra embed, que es insertar la fuente a mi proyecto
+    y copio tanto el link y el css sugerido, que es con el que diseñaron la fuente
+
+    Es importante mencionar que si selecciono un estilo, diferente al sugerido por
+    google fonts, el navegador va a forzar la fuente y pudiera verse mal
+    
+    Si el navegador no encuentra una fuente, usa la de respaldo y va después de una coma
+    En el ejemplo de abajo, Si no encuentra "Coming Soon", selecciona la fuente Arial
+    y si tampoco la encuentra, usa cursive. En el html comente los links para
+    que usara intencionalmente la fuente Arial. 
+
+    Nota importante, a mayor cantidad de fuentes que traigo de google, se puede hacer,
+    más lenta la página
+    Se recomienda solo jalar las fuentes que realmente voy a usar
+    También no dejar que el navegador autocomplete el font-weight
+*/
+
+p{
+    border: 1px solid #000;
+    background-color: #eee;
+    padding: .5em 1em;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+p{
+    font-family: "Coming Soon", Arial, cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
