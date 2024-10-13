@@ -46,7 +46,7 @@
     width: fit-content;
     padding: .2em 0.3em;
 }
-
+/* Ejemplo 1 */
 .p:nth-child(even){
     background-color: yellowgreen;
     
@@ -56,7 +56,7 @@
     background-color: rgb(78, 98, 207);
     color: white;
 }
-
+/* Ejemplo 2 */
 .x:nth-child(4){
     background-color: yellowgreen;
 }
@@ -64,7 +64,7 @@
     background-color: rgb(78, 98, 207);
     color: white;
 }
-
+/* Ejemplo 3 */
 .xn:nth-child(2n){
     background-color: yellowgreen;
 }
@@ -73,7 +73,7 @@
     background-color: rgb(78, 98, 207);
     color: white;   
 }
-
+/* Ejemplo 5 */
 .xny:nth-of-type(3n+1){
     background-color: rgb(78, 98, 207);
     color: white;   
